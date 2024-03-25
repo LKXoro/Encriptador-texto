@@ -8,8 +8,24 @@ body{
 
 }
 
+h1{
+    display: block;
+    width: 120px;
+    height: 48px;
+    margin: 2% 0 0 2%;
+}
+
+form{
+    display: inline-block;
+    margin: 5% 0 0 15%;
+    width: 800px;
+    height: 400px;
+}
+
 #mensaje {
     background-color: #F3F5FC;
+    width: 800px;
+    height: 350px;
     font-family: Inter;
     font-size: 32px;
     font-weight: 400;
@@ -18,7 +34,12 @@ body{
     color: #0A3871;
     border: none;
     resize: none;
-    width: 30%;
     outline: none;
-    margin: 10% 0 0 15%;
+}
+
+.output{
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 1%;
 }
