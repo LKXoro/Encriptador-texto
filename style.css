@@ -47,7 +47,7 @@ form{
     background: #FFFFFF;
     position: absolute;
     top: 20px;
-    right: 1%;
+    right: 2%;
 }
 
 p{
@@ -58,16 +58,43 @@ p{
 .container__boton {
     border-radius: 16px;
     background: #1875E8;
-    padding: 16px 24px;
-    width: 15%;
+    width: 328px;
+    height: 100%;
     font-size: 24px;
     font-weight: 700;
     border: none;
-    margin-top: 2rem;
 }
 
 .botones {
+    width: 680px;
+    height: 67px;
     display: flex;
-    gap: 1em;
-    margin-left: 8em;
+    gap: 24px;
+    margin-left: 15%;
+    position: absolute;
+    top: 90%;
+}
+
+#encriptar{
+    background-color: #0A3871;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.36px;
+    align-items: center;
+}
+
+#desencriptar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.36px;
+    align-items: center;
+    border: 1px solid #0A3871;
+}
+
+p,
+button {
+    font-family: 'Inter', sans-serif;
 }
