@@ -1,5 +1,4 @@
-let mensaje;
 
 function ocultar() {
-    document.getElementById("container").style.display = "none";
+    document.getElementById("areatexto").style.display = "none";
   }
