@@ -1,4 +1,6 @@
-function asignarTextoElemento(elemento, texto){
+let mensaje;
+
+function encriptar(elemento, texto){
     let elementoHTML = document.querySelector(elemento);
     elementoHTML.innerHTML = texto;
     return;
