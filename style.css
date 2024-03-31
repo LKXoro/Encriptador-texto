@@ -8,15 +8,16 @@ body{
 
 }
 
-.logo{
-    height: 48px;
-}
 
 h1{
     display: block;
     width: 120px;
     height: 48px;
     margin: 2% 0 0 2%;
+}
+
+h1>img{
+    height: 48px;
 }
 
 form{
@@ -107,6 +108,7 @@ button {
     width: 336px;
     height: 304px;
     margin-top: 283px;
+    margin-left: 10%;
 }
 
 .container-alerta{
