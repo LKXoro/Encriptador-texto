@@ -107,8 +107,27 @@ button {
 .Muñeco{
     width: 336px;
     height: 304px;
-    margin-top: 283px;
+    margin-top: 220px;
     margin-left: 10%;
+}
+
+.mensaje-sin-texto{
+    width: 336px;
+    height: 122px;
+    position: absolute;
+    top: 60%;
+    margin-left: 20%;
+    gap: 16px;
+}
+
+#texto_1{
+    color: #343A40;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: center;
+
 }
 
 .container-alerta{
