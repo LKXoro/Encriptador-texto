@@ -25,8 +25,8 @@
             <p id="texto-procesado"></p>
         </div>
         <div class="mensaje-sin-texto">
-            <p class="texto_1">Ningún mensaje fue encontrado</p>
-            <p class="texto_2">Ingrese el texto que desees encriptar o desencriptar</p>
+            <p class="texto_1" id="texto_1">Ningún mensaje fue encontrado</p>
+            <p class="texto_2" id="texto_2">Ingrese el texto que desees encriptar o desencriptar</p>
         </div>
     </div>
 
@@ -37,7 +37,7 @@
 
     <div class="botones">
         <button onclick="encriptar()" class="container__boton" id="encriptar">Encriptar</button>
-        <button class="container__boton" id="desencriptar" disabled>Desencriptar</button>
+        <button onclick="desencriptar()" class="container__boton" id="desencriptar">Desencriptar</button>
     </div>
 
     </main>
