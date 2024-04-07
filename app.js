@@ -1,4 +1,5 @@
 let mensaje;
+var copiartexto;
 
 function asignarTextoElemento(elemento, texto){
   mensaje = document.getElementById(elemento).value;
@@ -42,4 +43,11 @@ function encriptar() {
       ocultar("texto_2");
       mostrar("copiar");
     }
+    }
+
+    function copiar() {
+      copiartexto = document.getElementById("texto-procesado");
+      copiartexto.select();
+      copiartexto.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(copiartexto.value)
     }
