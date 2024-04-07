@@ -16,13 +16,11 @@ function encriptar() {
   ocultar("areatexto");
   ocultar("texto_1");
   ocultar("texto_2");
-  console.log(mensaje);
   }
 
-  function desencriptar() {
-    asignarTextoElemento("mensaje", "texto-procesado");
-    ocultar("areatexto");
-    ocultar("texto_1");
-    ocultar("texto_2");
-    console.log(mensaje);
-    }
+function desencriptar() {
+  asignarTextoElemento("mensaje", "texto-procesado");
+  ocultar("areatexto");
+  ocultar("texto_1");
+  ocultar("texto_2");
+  }
