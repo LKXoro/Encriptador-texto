@@ -20,10 +20,12 @@ function encriptar() {
     mostrar("areatexto");
     mostrar("texto_1");
     mostrar("texto_2");
+    ocultar("copiar");
   } else{
     ocultar("areatexto");
     ocultar("texto_1");
     ocultar("texto_2");
+    mostrar("copiar");
   }
   }
 
@@ -33,9 +35,11 @@ function encriptar() {
       mostrar("areatexto");
       mostrar("texto_1");
       mostrar("texto_2");
+      ocultar("copiar");
     } else{
       ocultar("areatexto");
       ocultar("texto_1");
       ocultar("texto_2");
+      mostrar("copiar");
     }
     }
