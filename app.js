@@ -8,6 +8,9 @@ function asignarTextoElemento(elemento, texto){
 
 
 function encriptar() {
-    document.getElementById("areatexto").style.display = "none";
+  mensaje = document.getElementById("mensaje").value;
+  document.getElementById("texto-procesado").innerHTML = mensaje;
+  document.getElementById("areatexto").style.display = "none";
+  console.log(mensaje);
   }
 
