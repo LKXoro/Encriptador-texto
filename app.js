@@ -7,20 +7,35 @@ function asignarTextoElemento(elemento, texto){
 }
 
 function ocultar(elemento){
-  document.getElementById(elemento).style.display = "none";
+  document.getElementById(elemento).style.visibility = "hidden";
 }
 
+function mostrar(elemento){
+  document.getElementById(elemento).style.visibility = "visible";
+}
 
 function encriptar() {
   asignarTextoElemento("mensaje", "texto-procesado");
-  ocultar("areatexto");
-  ocultar("texto_1");
-  ocultar("texto_2");
+  if(typeof mensaje === "string" && mensaje.length === 0){
+    mostrar("areatexto");
+    mostrar("texto_1");
+    mostrar("texto_2");
+  } else{
+    ocultar("areatexto");
+    ocultar("texto_1");
+    ocultar("texto_2");
+  }
   }
 
-function desencriptar() {
-  asignarTextoElemento("mensaje", "texto-procesado");
-  ocultar("areatexto");
-  ocultar("texto_1");
-  ocultar("texto_2");
-  }
+  function desencriptar() {
+    asignarTextoElemento("mensaje", "texto-procesado");
+    if(typeof mensaje === "string" && mensaje.length === 0){
+      mostrar("areatexto");
+      mostrar("texto_1");
+      mostrar("texto_2");
+    } else{
+      ocultar("areatexto");
+      ocultar("texto_1");
+      ocultar("texto_2");
+    }
+    }
