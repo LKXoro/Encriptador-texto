@@ -89,6 +89,10 @@ p{
     align-items: center;
 }
 
+#encriptar:active{
+    transform: scale(0.9);
+}
+
 #desencriptar{
     background-color: #D8DFE8;
     color: #0A3871;
@@ -97,6 +101,10 @@ p{
     line-height: 19.36px;
     align-items: center;
     border: 1px solid #0A3871;
+}
+
+#desencriptar:active{
+    transform: scale(0.9);
 }
 
 p,
