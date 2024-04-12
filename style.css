@@ -185,7 +185,7 @@ button {
 }
 
 .container-alerta{
-    width: 240px;
+    width: 360px;
     height: 18px;
     position: absolute;
     top: 83%;
@@ -193,7 +193,8 @@ button {
 }
 
 .exclamation{
-    margin-top:25px;
+    margin-top:37px;
+    margin-left: 15px;
     height: 14px;
     display: inline-block;
     position: absolute;
