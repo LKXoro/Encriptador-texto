@@ -7,6 +7,18 @@ function asignarTextoElemento(elemento, texto){
   return;
 }
 
+function encriptartexto(){
+  mensaje = mensaje.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat");
+  document.getElementById("texto-procesado").innerHTML = mensaje;
+  return;
+}
+
+function desencriptartexto(){
+  mensaje = mensaje.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u");
+  document.getElementById("texto-procesado").innerHTML = mensaje;
+  return;
+}
+
 function ocultar(elemento){
   document.getElementById(elemento).style.visibility = "hidden";
 }
@@ -23,6 +35,7 @@ function encriptar() {
     mostrar("texto_2");
     ocultar("copiar");
   } else{
+    encriptartexto();
     ocultar("areatexto");
     ocultar("texto_1");
     ocultar("texto_2");
@@ -38,6 +51,7 @@ function encriptar() {
       mostrar("texto_2");
       ocultar("copiar");
     } else{
+      desencriptartexto();
       ocultar("areatexto");
       ocultar("texto_1");
       ocultar("texto_2");
@@ -46,8 +60,6 @@ function encriptar() {
     }
 
     function copiar() {
-      copiartexto = document.getElementById("texto-procesado");
-      copiartexto.select();
-      copiartexto.setSelectionRange(0, 99999);
-      navigator.clipboard.writeText(copiartexto.value)
+      copiartexto = mensaje;
+      navigator.clipboard.writeText(copiartexto)
     }
